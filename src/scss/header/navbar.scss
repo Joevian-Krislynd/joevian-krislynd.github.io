@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+}
+
+.navbar-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5em;
+  padding-right: 0.7em;
+}
+
+.navlinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.navbar-icon {
+  width: 36px;
+  height: 36px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.link-to-section {
+  padding: 0.5em 0.8em;
+  color: var(--text-color);
+}
