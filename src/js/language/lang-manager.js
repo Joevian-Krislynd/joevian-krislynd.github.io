@@ -1,16 +1,19 @@
+import usaIcon from './../../assets/icon/usa.png';
+import inaIcon from './../../assets/icon/ina.png';
+
 function updateLangIcon() {
     const langToggle = document.getElementById("lang-toggle");
     if (!langToggle) return;
     const lang = document.documentElement.dataset.lang || "en";
-    langToggle.src = lang === "en" ? "./../../assets/icon/usa.png" : "./../../assets/icon/ina.png";
+    langToggle.src = lang === "en" ? usaIcon : inaIcon;
 }
 
 async function setLanguage(lang) {
     try {
-        const response = await fetch(`./../../lang/${lang}.json`);
+        const response = await fetch(`/lang/${lang}.json`);
 
         if (!response.ok) {
-            throw new Error(`Failed to load lang/${lang}.json`);
+            throw new Error(`Failed to load /lang/${lang}.json`);
         }
         const translations = await response.json();
 

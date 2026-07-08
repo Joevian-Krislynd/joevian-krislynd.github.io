@@ -1,8 +1,11 @@
+import moonIcon from './../../assets/icon/moon.png';
+import sunIcon from './../../assets/icon/sun.png';
+
 export function updateThemeIcon() {
     const themeToggle = document.getElementById("theme-toggle");
     if (!themeToggle) return;
     const theme = document.documentElement.dataset.theme || "light";
-    themeToggle.src = theme === "dark" ? "./../../assets/icon/moon.png" : "./../../assets/icon/sun.png";
+    themeToggle.src = theme === "dark" ? moonIcon : sunIcon;
 }
 
 export function initTheme() {
