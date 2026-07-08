@@ -1,7 +1,7 @@
 {
-  "navbar.about": "Tentang",
+  "navbar.about": "Tentang Saya",
   "navbar.exp": "Pengalaman",
-  "navbar.edu": "Riwayat Pendidikan",
-  "navbar.tool": "Teknologi",
+  "navbar.edu": "Pendidikan",
+  "navbar.tool": "Tech Stack",
   "greeting": "Selamat Datang"
 }

@@ -1,3 +1,9 @@
+import { initLang } from "./language/lang-manager";
+import { initTheme } from "./theme/theme-manager";
+import "bootstrap/dist/css/bootstrap.min.css"; 
+import "bootstrap";
+import "../scss/style.scss";
+
 async function loadIncludes() {
     const includes = document.getElementsByTagName('include');
     const promises = [];
@@ -25,18 +31,9 @@ async function loadIncludes() {
     return Promise.all(promises);
 }
 
-async function setLanguage(lang) {
-  const response = await fetch(`lang/${lang}.json`);
-  const translations = await response.json();
-
-  document.querySelectorAll("[data-i18n]").forEach(element => {
-    const key = element.dataset.i18n;
-    element.textContent = translations[key];
-  });
-}
-
 const domReadyHandler = () => {
-    setLanguage('id');
+    initLang();
+    initTheme();
 };
 
 loadIncludes().then(() => {
