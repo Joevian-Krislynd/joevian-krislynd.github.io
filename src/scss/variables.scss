@@ -4,6 +4,7 @@ html[data-theme="light"] {
   --text-secondary: #64748b;
   --primary-color: #2563eb;
   --border-color: #e2e8f0;
+  --navbar-hover-bgcolor: green;
 }
 
 html[data-theme="dark"] {
@@ -12,4 +13,5 @@ html[data-theme="dark"] {
   --text-secondary: #cbd5e1;
   --primary-color: #3b82f6;
   --border-color: #334155;
+  --navbar-hover-bgcolor: red;
 }
