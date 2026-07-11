@@ -1,15 +1,26 @@
 header {
   width: 100%;
+  border-bottom: 1px solid black;
 }
 
 .navbar-container {
   align-items: center;
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
+  align-items: center;
   justify-content: space-between;
-  padding: 0.5em;
-  padding-right: 0.7em;
+  padding: 3em;
+  padding-bottom: 0;
+}
+
+#navbar-menu {
+  display: flex;
+  padding: 2.5rem 0;
+}
+
+#logo {
 }
 
 .navlinks {
@@ -22,14 +33,81 @@ header {
 }
 
 .navbar-icon {
-  width: 36px;
-  height: 36px;
+  width: 26px;
+  height: 26px;
   margin-left: 0.5em;
   margin-right: 0.5em;
   cursor: pointer;
 }
 
+#nav-icon-container {
+  display: flex;
+  margin-left: 3rem;
+}
+
 .link-to-section {
   padding: 0.5em 0.8em;
   color: var(--text-color);
+}
+
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 2px;
+  background-color: var(--navbar-text-color);
+  transition: transform 0.2s ease-in;
+}
+
+#hamburger-menu:is(:focus, :hover) .icon-bar {
+  background-color: var(--navbar-hover-bgcolor);
+}
+
+#hamburger-menu[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
+  position: absolute;
+  margin: 0;
+  width: 30px;
+}
+
+#hamburger-menu[aria-expanded="true"] .icon-bar:first-child {
+  transform: rotate(45deg);
+}
+
+#hamburger-menu[aria-expanded="true"] .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-menu[aria-expanded="true"] .icon-bar:last-child {
+  transform: rotate(-45deg);
+}
+
+#hamburger-menu[aria-expanded="true"] + #navbar-menu {
+  visibility: visible;
+}
+
+@media screen and (min-width: 800px) {
+  #hamburger-menu,
+  #hamburger-menu[aria-expanded="true"] {
+    display: none;
+  }
+
+  #navbar-menu,
+  #hamburger-menu[aria-expanded="true"] + #navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;
+    height: 100%;
+  }
+
+  .navlinks,
+  #hamburger-menu[aria-expanded="true"] + #navbar-menu .navlinks {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
 }

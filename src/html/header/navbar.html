@@ -1,5 +1,16 @@
 <nav class="navbar-container">
-  <a href="index.html">logo</a>
+  <a id="logo" href="index.html">logo</a>
+  <button
+    type="button"
+    id="hamburger-menu"
+    aria-controls="navbar-menu"
+    aria-label="Toggle menu"
+    aria-expanded="true"
+  >
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
   <div id="navbar-menu">
     <ul class="navlinks">
       <li class="nav-item">
@@ -18,20 +29,22 @@
       <li class="nav-item">
         <a href="#tools" data-i18n="navbar.tool" class="link-to-section"></a>
       </li>
-      <li class="nav-item">
+    </ul>
+    <div id="nav-icon-container">
+      <div>
         <img
           id="theme-toggle"
           class="navbar-icon rounded-circle border shadow-sm"
           alt="Theme"
         />
-      </li>
-      <li class="nav-item">
+      </div>
+      <div>
         <img
           id="lang-toggle"
           class="navbar-icon rounded-circle border shadow-sm p-1"
           alt="Language"
         />
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </nav>
