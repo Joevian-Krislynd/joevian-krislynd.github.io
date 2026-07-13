@@ -1,13 +1,3 @@
-export const NAVBAR_CONFIG = {
-  links: [
-    { href: "#about", text: "About" },
-    { href: "#exp", text: "Experience" },
-    { href: "#edu", text: "Education" },
-    { href: "#tools", text: "Stacks" },
-    { href: "#contact", text: "Contact" },
-  ],
-};
-
 export class Navbar {
   constructor() {
     this.nav = document.getElementById("navbar");
@@ -19,18 +9,22 @@ export class Navbar {
     this.prevScrollPosition =
       window.scrollY ?? document.documentElement.scrollTop;
 
+    this.darkMode = document.getElementById("light-mode");
     this.setListener();
   }
 
   setListener() {
-    this.navToggle.addEventListener("click", () => this.toggleNav);
-    this.navMenu.addEventListener("click", () => this.toggleNav);
+    this.navToggle.addEventListener("click", () => this.toggleNav());
     this.navItems.forEach((item) => {
-      item.addEventListener("click", () => this.toggleNav);
+      item.addEventListener("click", () => this.toggleNav());
     });
-    console.log(this.navToggle);
-    console.log(this.navMenu);
-    console.log(this.navItems);
+    this.darkMode.addEventListener("change", () => {
+      // let dm = this.darkMode.checked || false;
+      // console.log("Mode: " + dm);
+      const currentTheme = document.documentElement.dataset.theme || "light";
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      document.documentElement.dataset.theme = newTheme;
+    });
   }
 
   toggleNav() {
