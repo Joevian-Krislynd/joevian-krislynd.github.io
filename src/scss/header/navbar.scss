@@ -153,7 +153,7 @@ header {
   left: 1.5px;
   top: 3px;
   background-color: var(--bg-color);
-  background-image: url(../../assets/icon/sun.png);
+  background-image: url(./../../assets/icon/sun.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -164,7 +164,7 @@ header {
 .switch input:checked + .slider::before {
   transform: translateX(calc(4rem - 22px - 8px));
   background: #666;
-  background-image: url(../../assets/icon/moon.png);
+  background-image: url(./../../assets/icon/moon.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
