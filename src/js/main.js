@@ -35,7 +35,7 @@ async function loadIncludes() {
 const domReadyHandler = () => {
   new Navbar();
   initLang();
-  initTheme();
+  // initTheme();
 };
 
 loadIncludes().then(() => {
