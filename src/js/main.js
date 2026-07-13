@@ -3,8 +3,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import "../scss/style.scss";
 import { Navbar } from "./ux/navbar";
+import sunIcon from "./../assets/icon/sun.png";
+import moonIcon from "./../assets/icon/moon.png";
+
+const handleImportAssets = () => {
+  document.documentElement.style.setProperty("--sun-icon", `url(${sunIcon})`);
+  document.documentElement.style.setProperty("--moon-icon", `url(${moonIcon})`);
+};
 
 const domReadyHandler = () => {
+  handleImportAssets();
   new Navbar();
   initLang();
 };
