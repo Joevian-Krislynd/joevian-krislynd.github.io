@@ -1,49 +1,57 @@
 <nav class="navbar-container">
   <a id="logo" href="index.html">logo</a>
-  <button
-    type="button"
-    id="hamburger-menu"
-    aria-controls="navbar-menu"
-    aria-label="Toggle menu"
-    aria-expanded="true"
-  >
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <div id="navbar-menu">
-    <ul class="navlinks">
-      <li class="nav-item">
-        <a href="#about" data-i18n="navbar.about" class="link-to-section"></a>
-      </li>
-      <li class="nav-item">
-        <a
-          href="#experience"
-          data-i18n="navbar.exp"
-          class="link-to-section"
-        ></a>
-      </li>
-      <li class="nav-item">
-        <a href="#education" data-i18n="navbar.edu" class="link-to-section"></a>
-      </li>
-      <li class="nav-item">
-        <a href="#tools" data-i18n="navbar.tool" class="link-to-section"></a>
-      </li>
-    </ul>
-  </div>
-  <div id="nav-icon-container">
-    <div>
-      <img
-        id="lang-toggle"
-        class="navbar-icon rounded-circle border shadow-sm p-1"
-        alt="Language"
-      />
+  <div class="navbar-after-logo">
+    <div id="navbar-menu">
+      <ul class="navlinks">
+        <li class="nav-item">
+          <a href="#about" data-i18n="navbar.about" class="link-to-section"></a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="#experience"
+            data-i18n="navbar.exp"
+            class="link-to-section"
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="#education"
+            data-i18n="navbar.edu"
+            class="link-to-section"
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a href="#tools" data-i18n="navbar.tool" class="link-to-section"></a>
+        </li>
+      </ul>
     </div>
-    <div class="setting-item">
-      <label class="switch">
-        <input type="checkbox" id="light-mode" />
-        <span class="slider"></span>
-      </label>
+    <div class="navbar-mobile-toolbar">
+      <button
+        type="button"
+        id="hamburger-menu"
+        aria-controls="navbar-menu"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="nav-icon-container">
+        <div>
+          <img
+            id="lang-toggle"
+            class="navbar-icon rounded-circle border shadow-sm p-1"
+            alt="Language"
+          />
+        </div>
+        <div class="setting-item">
+          <label class="switch">
+            <input type="checkbox" id="light-mode" />
+            <span class="slider border shadow-sm"></span>
+          </label>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
