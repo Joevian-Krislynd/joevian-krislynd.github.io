@@ -19,8 +19,6 @@ export class Navbar {
       item.addEventListener("click", () => this.toggleNav());
     });
     this.darkMode.addEventListener("change", () => {
-      // let dm = this.darkMode.checked || false;
-      // console.log("Mode: " + dm);
       const currentTheme = document.documentElement.dataset.theme || "light";
       const newTheme = currentTheme === "light" ? "dark" : "light";
       document.documentElement.dataset.theme = newTheme;
@@ -28,8 +26,10 @@ export class Navbar {
   }
 
   toggleNav() {
-    console.log("klik");
     this.isNavbarExpanded = !this.isNavbarExpanded;
     this.navToggle.setAttribute("aria-expanded", this.isNavbarExpanded);
+    if (window.innerWidth < 768) {
+      this.navMenu.classList.toggle("active", this.isNavbarExpanded);
+    }
   }
 }
