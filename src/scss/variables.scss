@@ -2,9 +2,11 @@ html[data-theme="light"] {
   --bg-color: #faf9f6;
   --text-color: #1e293b;
   --text-secondary: #64748b;
-  --primary-color: #2563eb;
+  --primary-color: #565b69;
   --border-color: rgb(0 0 0 / 10%);
   --hamburger-menu-color: #1e293b;
+  --icon-color: rgb(37 99 235 / 8%);
+  --icon-color-hover: rgb(37 99 235 / 14%);
 }
 
 html[data-theme="dark"] {
@@ -14,4 +16,6 @@ html[data-theme="dark"] {
   --primary-color: #3b82f6;
   --border-color: rgb(255 255 255 / 15%);
   --hamburger-menu-color: #cbd5e1;
+  --icon-color: rgb(37 99 235 / 8%);
+  --icon-color-hover: rgb(37 99 235 / 14%);
 }
