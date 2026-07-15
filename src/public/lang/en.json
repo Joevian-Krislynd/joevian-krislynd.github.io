@@ -2,5 +2,6 @@
   "navbar.home": "Home",
   "navbar.portfolio": "Portfolio",
   "navbar.about": "About Me",
-  "navbar.skill": "Skills"
+  "navbar.skill": "Skills",
+  "footer.rights": "All rights reserved."
 }
