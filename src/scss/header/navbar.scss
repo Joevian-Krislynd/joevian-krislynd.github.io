@@ -111,7 +111,38 @@ header {
 #nav-icon-container {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 2rem;
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.lang-option {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.lang-option:hover,
+.lang-option:focus-visible {
+  color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+.lang-option.active {
+  color: var(--primary-color);
+}
+
+.lang-separator {
+  color: var(--border-color);
+  user-select: none;
 }
 
 .icon-bar {

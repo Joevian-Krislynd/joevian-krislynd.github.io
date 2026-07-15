@@ -34,12 +34,17 @@
         <span class="icon-bar"></span>
       </button>
       <div id="nav-icon-container">
-        <div>
-          <img
-            id="lang-toggle"
-            class="navbar-icon rounded-circle border shadow-sm p-1"
-            alt="Language"
-          />
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <a
+            href="#"
+            class="lang-option active"
+            data-lang="en"
+            aria-current="page"
+          >
+            ENG
+          </a>
+          <span class="lang-separator">|</span>
+          <a href="#" class="lang-option" data-lang="id">ID</a>
         </div>
         <div class="setting-item">
           <label class="switch">
