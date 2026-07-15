@@ -18,3 +18,28 @@ body {
 a {
   text-decoration: none;
 }
+
+/* Central inner container used across header, main, footer */
+.site-inner {
+  width: min(100%, var(--site-max-width));
+  max-width: var(--site-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: var(--site-side-padding);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .site-inner {
+    width: min(100%, var(--mobile-max-width));
+    max-width: var(--mobile-max-width);
+    padding-inline: var(--mobile-side-padding);
+  }
+}
+
+/* Make images responsive inside constrained containers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
