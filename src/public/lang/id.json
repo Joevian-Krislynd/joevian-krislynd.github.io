@@ -3,5 +3,20 @@
   "navbar.portfolio": "Portofolio",
   "navbar.about": "Tentang Saya",
   "navbar.skill": "Keahlian",
-  "footer.rights": "Hak cipta dilindungi undang-undang."
+  "footer.rights": "Hak cipta dilindungi undang-undang.",
+  "about.title": "Kenali Saya Lebih Dekat",
+  "about.education": "Pendidikan",
+  "about.experience": "Pengalaman Kerja",
+  "about.education.1": "Sarjana Ilmu Komputer",
+  "about.education.1-org": "Universitas Bina Nusantara | 2019 - 2023",
+  "about.education.1-desc": "Menyelesaikan studi Ilmu Komputer dan lulus dengan IPK 3.84",
+  "about.education.2": "Beasiswa PPTI BCA",
+  "about.education.2-org": "PT Bank Central Asia Tbk | Jul 2019 - Mar 2022",
+  "about.education.2-desc": "Menjadi penerima beasiswa penuh dalam program pendidikan komprehensif berdurasi 30 bulan yang fokus pada Ilmu Komputer dan operasi bisnis perbankan.",
+  "about.experience.1": "Information Technology Specialist",
+  "about.experience.1-org": "PT Bank Central Asia Tbk (BCA) | Apr 2022 - Sekarang",
+  "about.experience.1-desc": "Mengelola dan mengembangkan aplikasi serta sistem yang mendukung proses bisnis kredit konsumtif (termasuk melakukan pembaruan framework dan library yang usang). Berperan dalam digitalisasi proses bisnis KPR misalnya dengan membangun sistem penilaian kemampuan bayar nasabah yang berhasil mempercepat alur persetujuan kredit hingga 40%.",
+  "about.experience.2": "Peserta Magang Teknologi Informasi",
+  "about.experience.2-org": "PT Bank Central Asia Tbk (BCA) | Jul 2021 - Feb 2022",
+  "about.experience.2-desc": "Mengembangkan fitur regulatif terkait deteksi kecurangan (fraud) dan Anti-Pencucian Uang (AML) pada proses realisasi kredit, serta melakukan refactoring kode program berskala besar pada lebih dari 300 file Java."
 }

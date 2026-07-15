@@ -3,5 +3,20 @@
   "navbar.portfolio": "Portfolio",
   "navbar.about": "About Me",
   "navbar.skill": "Skills",
-  "footer.rights": "All rights reserved."
+  "footer.rights": "All rights reserved.",
+  "about.title": "Get To Know Me Better",
+  "about.education": "Education",
+  "about.experience": "Work Experience",
+  "about.education.1": "Bachelor of Computer Science",
+  "about.education.1-org": "Bina Nusantara University | 2019 - 2023",
+  "about.education.1-desc": "Completed Computer Science studies with a GPA of 3.84.",
+  "about.education.2": "PPTI BCA Scholarship",
+  "about.education.2-org": "PT Bank Central Asia Tbk | Jul 2019 - Mar 2022",
+  "about.education.2-desc": "Awarded a full corporate scholarship with a comprehensive 30-month education focused on computer science and banking business operations.",
+  "about.experience.1": "Information Technology Specialist",
+  "about.experience.1-org": "PT Bank Central Asia Tbk (BCA) | Apr 2022 - Present",
+  "about.experience.1-desc": "Manage and develop applications and systems supporting consumer credit business processes (including updating outdated frameworks and libraries). Contribute to KPR business process digitalization, including building a customer repayment capability assessment system that successfully accelerated the credit approval workflow by 40%.",
+  "about.experience.2": "Information Technology Intern",
+  "about.experience.2-org": "PT Bank Central Asia Tbk (BCA) | Jul 2021 - Feb 2022",
+  "about.experience.2-desc": "Developed regulatory features related to fraud detection and Anti-Money Laundering (AML) in the credit realization process and performed large-scale code refactoring across 300+ Java files."
 }
