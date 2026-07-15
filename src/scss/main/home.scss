@@ -1,0 +1,18 @@
+.home-container {
+  width: 100%;
+  min-height: 70vh;
+  background-color: rgb(231, 205, 205, 14%);
+  display: flex;
+  justify-content: end;
+}
+
+#profpict {
+  height: 70vh;
+  background-image: url("./../../assets/backforprofpict.svg");
+  background-size: 83%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 8vh;
+  padding-right: 10vw;
+  padding-left: 12vw;
+}
