@@ -2,4 +2,108 @@
 
 :root {
   --font-sans-serif: "Montserrat", sans-serif;
+  --font-size-content: 1rem;
+  --font-size-heading: clamp(1.5rem, 2.4vw, 2.25rem);
+  --font-size-subheading: clamp(1rem, 1.4vw, 1.15rem);
+  --font-size-label: 0.875rem;
+  --font-size-caption: 0.8rem;
+  --line-height-content: 1.7;
+  --line-height-heading: 1.2;
+  --line-height-subheading: 1.45;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+body,
+p,
+li,
+label,
+button,
+input,
+textarea,
+select,
+span,
+a,
+small,
+blockquote,
+.text-content {
+  font-family: var(--font-sans-serif);
+  font-size: var(--font-size-content);
+  line-height: var(--line-height-content);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-heading {
+  font-family: var(--font-sans-serif);
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+}
+
+.text-subheading {
+  font-family: var(--font-sans-serif);
+  font-size: var(--font-size-subheading);
+  line-height: var(--line-height-subheading);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+.text-label,
+.text-caption {
+  font-family: var(--font-sans-serif);
+  letter-spacing: 0.03em;
+}
+
+.text-label {
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color);
+}
+
+.text-caption {
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+}
+
+.font-weight-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-weight-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-weight-black {
+  font-weight: var(--font-weight-black);
+}
+
+.font-style-italic {
+  font-style: italic;
 }

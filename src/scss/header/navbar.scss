@@ -3,8 +3,6 @@ header {
   border-bottom: 1px solid var(--border-color);
   position: relative;
   text-align: center;
-  font-family: var(--font-sans-serif);
-  font-weight: 500;
 }
 
 .navbar-container {
@@ -86,6 +84,10 @@ header {
   color: var(--text-color);
   position: relative;
   transition: color 0.2s ease;
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .link-to-section::after {
