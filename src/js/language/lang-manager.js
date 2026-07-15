@@ -1,49 +1,52 @@
-import usaIcon from './../../assets/icon/usa.png';
-import inaIcon from './../../assets/icon/ina.png';
+function updateLangSwitcher(lang) {
+  const langOptions = document.querySelectorAll(".lang-option");
 
-function updateLangIcon() {
-    const langToggle = document.getElementById("lang-toggle");
-    if (!langToggle) return;
-    const lang = document.documentElement.dataset.lang || "en";
-    langToggle.src = lang === "en" ? usaIcon : inaIcon;
+  langOptions.forEach((option) => {
+    const isActive = option.dataset.lang === lang;
+    option.classList.toggle("active", isActive);
+    option.setAttribute("aria-current", isActive ? "page" : "false");
+  });
 }
 
 async function setLanguage(lang) {
-    try {
-        const response = await fetch(`/lang/${lang}.json`);
+  try {
+    const response = await fetch(`/lang/${lang}.json`);
 
-        if (!response.ok) {
-            throw new Error(`Failed to load /lang/${lang}.json`);
-        }
-        const translations = await response.json();
-
-        document.querySelectorAll("[data-i18n]").forEach(element => {
-            const key = element.dataset.i18n;
-            element.textContent = translations[key] || key;
-        });
-    } catch (error) {
-        console.error("Language loading failed:", error);
+    if (!response.ok) {
+      throw new Error(`Failed to load /lang/${lang}.json`);
     }
+    const translations = await response.json();
+
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+      const key = element.dataset.i18n;
+      element.textContent = translations[key] || key;
+    });
+  } catch (error) {
+    console.error("Language loading failed:", error);
+  }
 }
 
-function toggleLanguage() {
-    const currentLang = document.documentElement.dataset.lang || "en";
+function toggleLanguage(event) {
+  event.preventDefault();
 
-    const newLang = currentLang === "en" ? "id" : "en";
-    document.documentElement.dataset.lang = newLang;
+  const selectedLang = event.currentTarget.dataset.lang;
+  document.documentElement.dataset.lang = selectedLang;
 
-    updateLangIcon();
-    setLanguage(newLang);
+  updateLangSwitcher(selectedLang);
+  setLanguage(selectedLang);
 }
 
 export function initLang() {
-    const langToggle = document.getElementById("lang-toggle");
-    if (!langToggle) return;
+  const langOptions = document.querySelectorAll(".lang-option");
+  if (!langOptions.length) return;
 
-    const lang = document.documentElement.dataset.lang || "en";
+  const lang = "en";
+  document.documentElement.dataset.lang = lang;
 
-    updateLangIcon();
-    setLanguage(lang);
+  updateLangSwitcher(lang);
+  setLanguage(lang);
 
-    langToggle.addEventListener( "click", toggleLanguage);
+  langOptions.forEach((option) => {
+    option.addEventListener("click", toggleLanguage);
+  });
 }
