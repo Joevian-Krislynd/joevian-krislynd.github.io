@@ -3,6 +3,8 @@
 @use "./footer/footer.scss";
 @use "./variables.scss";
 
+@use "./main/home.scss";
+
 * {
   box-sizing: border-box;
   margin: 0;

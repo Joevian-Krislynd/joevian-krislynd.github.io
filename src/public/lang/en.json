@@ -1,7 +1,6 @@
 {
-  "navbar.about": "About",
-  "navbar.exp": "Experience",
-  "navbar.edu": "Education",
-  "navbar.tool": "Tech Stack",
-  "greeting": "Welcome"
+  "navbar.home": "Home",
+  "navbar.portfolio": "Portfolio",
+  "navbar.about": "About Me",
+  "navbar.skill": "Skills"
 }
