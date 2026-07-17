@@ -8,7 +8,7 @@
     "home-text profpict"
     "home-description profpict";
   align-items: start;
-  gap: clamp(1rem, 1.5vw, 1.5rem) clamp(2rem, 4vw, 4rem);
+  gap: clamp(1rem, 1.5vw, 1.5rem) clamp(1rem, 1.5vw, 1.5rem);
   padding: clamp(4rem, 8vw, 6rem) var(--site-side-padding);
 }
 
