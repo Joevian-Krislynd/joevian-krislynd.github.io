@@ -17,16 +17,6 @@ header {
     margin: 0 auto;
     max-height: 100%;
   }
-  .logo-text {
-    // font-family: "Alegreya", serif;
-    font-family: var(--font-sans-serif);
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    font-weight: var(--font-weight-bold);
-    color: var(--text-color);
-    letter-spacing: -0.04em;
-    // text-transform: uppercase;
-    // margin-left: 0.5rem;
-  }
 }
 
 .navbar-container {
