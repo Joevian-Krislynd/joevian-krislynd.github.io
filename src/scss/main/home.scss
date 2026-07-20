@@ -38,12 +38,13 @@
   margin: 0;
   white-space: nowrap;
   overflow-wrap: normal;
+  color: var(--tertiary-color);
 }
 
 .home-text-container .text-subheading {
   font-family: "Roboto", sans-serif;
   font-size: clamp(1.15rem, 1.6vw, 1.5rem);
-  color: var(--accent-color);
+  color: var(--secondary-color);
   margin: 0;
   font-weight: 500;
 }
