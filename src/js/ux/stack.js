@@ -4,16 +4,13 @@ function createCategoryBlock(title, pngList = [], labelList = []) {
   const section = document.createElement("section");
   section.className = "stack-category";
 
-  const header = document.createElement("h3");
-  header.className = "stack-category-title";
-  header.textContent = title;
-  section.appendChild(header);
+  const titleWrapper = document.createElement("div");
+  titleWrapper.className = "stack-category-title";
+  titleWrapper.textContent = title;
+  section.appendChild(titleWrapper);
 
-  const grid = document.createElement("div");
-  grid.className = "stack-grid";
-
-  const row = document.createElement("div");
-  row.className = "stack-row";
+  const items = document.createElement("div");
+  items.className = "stack-category-items";
 
   const max = Math.max(pngList.length, labelList.length);
   for (let i = 0; i < max; i++) {
@@ -33,11 +30,10 @@ function createCategoryBlock(title, pngList = [], labelList = []) {
     label.textContent = labelList[i] || pngList[i] || "";
     card.appendChild(label);
 
-    row.appendChild(card);
+    items.appendChild(card);
   }
 
-  grid.appendChild(row);
-  section.appendChild(grid);
+  section.appendChild(items);
   return section;
 }
 
@@ -56,14 +52,6 @@ export default class Stack {
         selector: ".stack-section[data-section=experienced]",
       },
       { key: "learn", selector: ".stack-section[data-section=learn]" },
-    ];
-
-    const subOrder = [
-      "LANGUAGES",
-      "BACKEND",
-      "CI/CD",
-      "WORKFLOWS & CONCEPTS",
-      "VERSION CONTROL",
     ];
 
     mapping.forEach((m) => {
@@ -85,9 +73,7 @@ export default class Stack {
       const subContainer = document.createElement("div");
       subContainer.className = "stack-group-subcats";
 
-      subOrder.forEach((subKey) => {
-        const sub = group.subcategories[subKey];
-        if (!sub) return;
+      Object.entries(group.subcategories).forEach(([subKey, sub]) => {
         const pngList = Array.isArray(sub.png) ? sub.png : [];
         const labelList = Array.isArray(sub.labels) ? sub.labels : [];
         const block = createCategoryBlock(subKey, pngList, labelList);
