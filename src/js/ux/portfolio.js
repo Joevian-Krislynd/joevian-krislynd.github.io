@@ -19,22 +19,32 @@ export default class Portfolio {
     this.nextBtn = document.querySelector(
       ".portfolio-carousel .carousel-arrow.next",
     );
-    this.visible = 3;
-    this.index = 0; // start index
+    this.index = 0; // current start index
 
     if (!this.track || !this.viewport) return;
 
-    this._renderCards();
     this._bind();
     this._update();
     window.addEventListener("resize", () => this._update());
   }
 
+  getVisibleCount() {
+    return window.matchMedia("(max-width: 768px)").matches ? 1 : 3;
+  }
+
   _renderCards() {
     this.track.innerHTML = "";
-    this.items.forEach((it) => {
+    const visible = this.getVisibleCount();
+    const gap = 24;
+    const cardWidth = `calc((100% - ${gap * (visible - 1)}px) / ${visible})`;
+
+    for (let offset = 0; offset < visible; offset++) {
+      const itemIndex = (this.index + offset) % this.items.length;
+      const it = this.items[itemIndex];
       const card = document.createElement("div");
       card.className = "portfolio-card";
+      card.style.flex = `0 0 ${cardWidth}`;
+      if (offset !== visible - 1) card.style.marginRight = `${gap}px`;
 
       const imgWrap = document.createElement("div");
       imgWrap.className = "portfolio-card-imgwrap";
@@ -50,7 +60,7 @@ export default class Portfolio {
       card.appendChild(imgWrap);
       card.appendChild(caption);
       this.track.appendChild(card);
-    });
+    }
   }
 
   _bind() {
@@ -59,32 +69,16 @@ export default class Portfolio {
   }
 
   prev() {
-    this.index = Math.max(0, this.index - 1);
-    this._update();
+    this.index = (this.index - 1 + this.items.length) % this.items.length;
+    this._renderCards();
   }
 
   next() {
-    const maxIndex = Math.max(0, this.items.length - this.visible);
-    this.index = Math.min(maxIndex, this.index + 1);
-    this._update();
+    this.index = (this.index + 1) % this.items.length;
+    this._renderCards();
   }
 
   _update() {
-    const viewportWidth = this.viewport.clientWidth;
-    const gap = 24; // px
-    const cardWidth = Math.floor(
-      (viewportWidth - gap * (this.visible - 1)) / this.visible,
-    );
-    const cards = Array.from(this.track.children);
-    cards.forEach((c) => {
-      c.style.flex = `0 0 ${cardWidth}px`;
-      c.style.marginRight = `${gap}px`;
-    });
-    // last card margin reset
-    if (cards[cards.length - 1])
-      cards[cards.length - 1].style.marginRight = "0px";
-
-    const translateX = -(this.index * (cardWidth + gap));
-    this.track.style.transform = `translateX(${translateX}px)`;
+    this._renderCards();
   }
 }
