@@ -1,0 +1,66 @@
+/* Styles for the Portfolio module (carousel) */
+.portfolio-module {
+  margin: 48px 0;
+}
+
+.portfolio-module > .site-inner > .text-heading {
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.portfolio-carousel {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 300ms ease;
+  will-change: transform;
+}
+
+.portfolio-card {
+  background: var(--card-bg, #fff);
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(10, 10, 10, 0.04);
+  overflow: hidden;
+}
+
+.portfolio-card-imgwrap {
+  width: 100%;
+  height: 140px;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-card-caption {
+  padding: 12px;
+  font-size: 0.9rem;
+  color: var(--muted-text, #666);
+}
+
+.carousel-arrow {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-card-imgwrap {
+    height: 110px;
+  }
+}

@@ -3,7 +3,7 @@
   --site-side-padding: clamp(1rem, 4vw, 3rem);
 
   --mobile-max-width: 92%;
-  --mobile-side-padding: clamp(0.7rem, 2vw, 1.6rem);
+  --mobile-side-padding: clamp(0.5rem, 1.75vw, 1rem);
 }
 
 html[data-theme="light"] {
@@ -12,7 +12,8 @@ html[data-theme="light"] {
   --text-secondary: #64748b;
   --primary-color: #565b69;
   // --tertiary-color: #cb6c51;
-  --tertiary-color: #be123c;
+  // --tertiary-color: #be123c;
+  --tertiary-color: #051733;
   --border-color: rgb(0 0 0 / 10%);
   --hamburger-menu-color: #1e293b;
   --icon-color: rgb(37 99 235 / 8%);
