@@ -76,6 +76,7 @@ export default class Stack {
       Object.entries(group.subcategories).forEach(([subKey, sub]) => {
         const pngList = Array.isArray(sub.png) ? sub.png : [];
         const labelList = Array.isArray(sub.labels) ? sub.labels : [];
+        if (pngList.length === 0 && labelList.length === 0) return;
         const block = createCategoryBlock(subKey, pngList, labelList);
         subContainer.appendChild(block);
       });

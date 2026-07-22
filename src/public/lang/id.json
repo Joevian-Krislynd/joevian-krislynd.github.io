@@ -1,8 +1,9 @@
 {
   "navbar.home": "Beranda",
   "navbar.portfolio": "Portofolio",
-  "navbar.about": "Tentang Saya",
-  "navbar.skill": "Keahlian",
+  "navbar.about": "Tentang",
+  "navbar.stack": "Teknologi",
+  "navbar.contact": "Kontak",
   "footer.rights": "Hak cipta dilindungi undang-undang.",
   "about.title": "Kenali Saya Lebih Dekat",
   "about.education": "Pendidikan",

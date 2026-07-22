@@ -3,36 +3,56 @@ export const STACK_GROUPS = {
     title: "Current Stack & Expertise",
     subcategories: {
       LANGUAGES: {
-        png: ["/assets/porto/ubinus.png", "/assets/porto/predictme.png"],
-        labels: ["JavaScript", "Python"],
+        png: [
+          "/assets/stack/java.svg",
+          "/assets/stack/ts.svg",
+          "/assets/stack/js.svg",
+        ],
+        labels: ["Java", "TypeScript", "JavaScript"],
       },
       BACKEND: {
-        png: ["/assets/porto/bakersa.png"],
-        labels: ["Node.js"],
+        png: [
+          "/assets/stack/springboot.svg",
+          "/assets/stack/kafka.svg",
+          "/assets/stack/camunda.svg",
+          "/assets/stack/junit.svg",
+          "/assets/stack/struts.svg",
+        ],
+        labels: ["Spring Boot", "Kafka", "Camunda", "JUnit", "Struts"],
       },
-      "CI/CD": {
-        png: [],
-        labels: [],
+      FRONTEND: {
+        png: [
+          "/assets/stack/angular.svg",
+          "/assets/stack/saas.svg",
+          "/assets/stack/boostrap.svg",
+        ],
+        labels: ["Angular", "Saas", "Bootstrap"],
       },
-      "WORKFLOWS & CONCEPTS": {
-        png: [],
-        labels: [],
+      DATABASE: {
+        png: ["/assets/stack/postgresql.svg", "/assets/stack/oracledb.svg"],
+        labels: ["PostgreSQL", "Oracle DB"],
       },
-      "VERSION CONTROL": {
-        png: ["/assets/porto/bakersa1.png"],
-        labels: ["Git"],
+      DEVOPS: {
+        png: [
+          "/assets/stack/docker.svg",
+          "/assets/stack/gitlab.svg",
+          "/assets/stack/jenkins.svg",
+          "/assets/stack/flyway.svg",
+          "/assets/stack/kibana.svg",
+        ],
+        labels: ["Docker", "GitLab", "Jenkins", "Flyway", "Kibana"],
       },
-      "NEXT CATEGORY": {
-        png: ["/assets/porto/bakersa1.png"],
-        labels: ["Git"],
+      CLOUD: {
+        png: ["/assets/stack/ocp.svg"],
+        labels: ["OpenShift Cloud Platform"],
       },
-      "NEXT2 CATEGORY": {
-        png: ["/assets/porto/bakersa1.png"],
-        labels: ["Git"],
+      "APPLICATION SERVER": {
+        png: ["/assets/stack/jboss.svg"],
+        labels: ["JBoss"],
       },
-      "NEXT3 CATEGORY": {
-        png: ["/assets/porto/bakersa1.png"],
-        labels: ["Git"],
+      OTHER: {
+        png: ["/assets/stack/postman.svg", "/assets/stack/jira.svg"],
+        labels: ["Postman", "Jira"],
       },
     },
   },
@@ -40,28 +60,46 @@ export const STACK_GROUPS = {
     title: "Experienced With",
     subcategories: {
       LANGUAGES: {
-        png: ["/assets/porto/bakersa1.png"],
-        labels: ["TypeScript"],
+        png: [
+          "/assets/stack/python.svg",
+          "/assets/stack/csharp.svg",
+          "/assets/stack/c.svg",
+          "/assets/stack/cpp.svg",
+        ],
+        labels: ["Python", "C#", "C", "C++"],
       },
-      BACKEND: {
-        png: [],
-        labels: [],
+      FRONTEND: {
+        png: ["/assets/stack/react.svg", "/assets/stack/thymeleaf.svg"],
+        labels: ["React", "Thymeleaf"],
       },
-      "CI/CD": { png: [], labels: [] },
-      "WORKFLOWS & CONCEPTS": { png: [], labels: [] },
-      "VERSION CONTROL": { png: [], labels: [] },
+      DATABASE: {
+        png: ["/assets/stack/mongodb.svg", "/assets/stack/firebase.svg"],
+        labels: ["MongoDB", "Firebase Realtime Database"],
+      },
+      DEVOPS: {
+        png: ["/assets/stack/githubactions.svg"],
+        labels: ["Github Actions"],
+      },
+      CLOUD: {
+        png: ["/assets/stack/gcp.svg"],
+        labels: ["Google Cloud Platform"],
+      },
+      "MOBILE-APP-DEVELOPMENT": {
+        png: ["/assets/stack/androidstudio.svg"],
+        labels: ["Android Studio"],
+      },
+      "AI & DATA TOOLS": {
+        png: ["/assets/stack/jupyter.svg", "/assets/stack/googlecolab.svg"],
+        labels: ["Jupyter Notebook", "Google Colab"],
+      },
     },
   },
   learn: {
     title: "Currently Exploring",
     subcategories: {
-      LANGUAGES: { png: ["/assets/porto/predictme.png"], labels: ["Python"] },
-      BACKEND: { png: ["/assets/porto/ubinus.png"], labels: ["SQL"] },
-      "CI/CD": { png: [], labels: [] },
-      "WORKFLOWS & CONCEPTS": { png: [], labels: [] },
-      "VERSION CONTROL": {
-        png: ["/assets/porto/bakersa.png"],
-        labels: ["Git"],
+      "AI & DATA TOOLS": {
+        png: ["/assets/stack/vibecode.svg"],
+        labels: ["Vibe Coding (AI-Assisted Development)"],
       },
     },
   },
