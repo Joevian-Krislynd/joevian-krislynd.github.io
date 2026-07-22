@@ -10,23 +10,23 @@ export const STACK_GROUPS = {
         png: ["/assets/porto/bakersa.png"],
         labels: ["Node.js"],
       },
-      "CI/CD": {
+      "FRONTEND": {
         png: [],
         labels: [],
       },
-      "WORKFLOWS & CONCEPTS": {
+      "DATABASE": {
         png: [],
         labels: [],
       },
-      "VERSION CONTROL": {
+      "CLOUD": {
         png: ["/assets/porto/bakersa1.png"],
         labels: ["Git"],
       },
-      "NEXT CATEGORY": {
+      "DEVOPS": {
         png: ["/assets/porto/bakersa1.png"],
         labels: ["Git"],
       },
-      "NEXT2 CATEGORY": {
+      "OTHER": {
         png: ["/assets/porto/bakersa1.png"],
         labels: ["Git"],
       },
