@@ -2,7 +2,7 @@ export const STACK_GROUPS = {
   core: {
     title: "Current Stack & Expertise",
     subcategories: {
-      LANGUAGES: {
+      "Languages": {
         png: [
           "/assets/stack/java.svg",
           "/assets/stack/ts.svg",
@@ -10,7 +10,7 @@ export const STACK_GROUPS = {
         ],
         labels: ["Java", "TypeScript", "JavaScript"],
       },
-      BACKEND: {
+      "Backend": {
         png: [
           "/assets/stack/springboot.svg",
           "/assets/stack/kafka.svg",
@@ -20,7 +20,7 @@ export const STACK_GROUPS = {
         ],
         labels: ["Spring Boot", "Kafka", "Camunda", "JUnit", "Struts"],
       },
-      FRONTEND: {
+      "Frontend": {
         png: [
           "/assets/stack/angular.svg",
           "/assets/stack/saas.svg",
@@ -28,11 +28,11 @@ export const STACK_GROUPS = {
         ],
         labels: ["Angular", "Saas", "Bootstrap"],
       },
-      DATABASE: {
+      "Database": {
         png: ["/assets/stack/postgresql.svg", "/assets/stack/oracledb.svg"],
         labels: ["PostgreSQL", "Oracle DB"],
       },
-      DEVOPS: {
+      "DevOps": {
         png: [
           "/assets/stack/docker.svg",
           "/assets/stack/gitlab.svg",
@@ -42,15 +42,15 @@ export const STACK_GROUPS = {
         ],
         labels: ["Docker", "GitLab", "Jenkins", "Flyway", "Kibana"],
       },
-      CLOUD: {
+      "Cloud": {
         png: ["/assets/stack/ocp.svg"],
         labels: ["OpenShift Cloud Platform"],
       },
-      "APPLICATION SERVER": {
+      "Application Server": {
         png: ["/assets/stack/jboss.svg"],
         labels: ["JBoss"],
       },
-      OTHER: {
+      "Other": {
         png: ["/assets/stack/postman.svg", "/assets/stack/jira.svg"],
         labels: ["Postman", "Jira"],
       },
@@ -59,7 +59,7 @@ export const STACK_GROUPS = {
   experienced: {
     title: "Experienced With",
     subcategories: {
-      LANGUAGES: {
+      "Languages": {
         png: [
           "/assets/stack/python.svg",
           "/assets/stack/csharp.svg",
@@ -68,27 +68,27 @@ export const STACK_GROUPS = {
         ],
         labels: ["Python", "C#", "C", "C++"],
       },
-      FRONTEND: {
+      "Frontend": {
         png: ["/assets/stack/react.svg", "/assets/stack/thymeleaf.svg"],
         labels: ["React", "Thymeleaf"],
       },
-      DATABASE: {
+      "Database": {
         png: ["/assets/stack/mongodb.svg", "/assets/stack/firebase.svg"],
         labels: ["MongoDB", "Firebase Realtime Database"],
       },
-      DEVOPS: {
+      "DevOps": {
         png: ["/assets/stack/githubactions.svg"],
         labels: ["Github Actions"],
       },
-      CLOUD: {
+      "Cloud": {
         png: ["/assets/stack/gcp.svg"],
         labels: ["Google Cloud Platform"],
       },
-      "MOBILE-APP-DEVELOPMENT": {
+      "Mobile App Development": {
         png: ["/assets/stack/androidstudio.svg"],
         labels: ["Android Studio"],
       },
-      "AI & DATA TOOLS": {
+      "AI & Data Tools": {
         png: ["/assets/stack/jupyter.svg", "/assets/stack/googlecolab.svg"],
         labels: ["Jupyter Notebook", "Google Colab"],
       },
@@ -97,8 +97,8 @@ export const STACK_GROUPS = {
   learn: {
     title: "Currently Exploring",
     subcategories: {
-      "AI & DATA TOOLS": {
-        png: ["/assets/stack/vibecode.svg"],
+      "AI & Data Tools": {
+        png: ["/assets/stack/vibecode.png"],
         labels: ["Vibe Coding (AI-Assisted Development)"],
       },
     },
