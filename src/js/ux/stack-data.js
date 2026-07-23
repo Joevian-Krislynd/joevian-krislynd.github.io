@@ -15,10 +15,9 @@ export const STACK_GROUPS = {
           "/assets/stack/springboot.svg",
           "/assets/stack/kafka.svg",
           "/assets/stack/camunda.svg",
-          "/assets/stack/junit.svg",
           "/assets/stack/struts.svg",
         ],
-        labels: ["Spring Boot", "Kafka", "Camunda", "JUnit", "Struts"],
+        labels: ["Spring Boot", "Kafka", "Camunda", "Struts"],
       },
       "Frontend": {
         png: [
