@@ -12,16 +12,16 @@ export const STACK_GROUPS = {
       },
       "Backend": {
         png: [
-          "/assets/stack/springboot.svg",
+          "/assets/stack/springboot.png",
           "/assets/stack/kafka.svg",
-          "/assets/stack/camunda.svg",
+          "/assets/stack/camunda.png",
           "/assets/stack/struts.svg",
         ],
         labels: ["Spring Boot", "Kafka", "Camunda", "Struts"],
       },
       "Frontend": {
         png: [
-          "/assets/stack/angular.svg",
+          "/assets/stack/angular.png",
           "/assets/stack/saas.svg",
           "/assets/stack/boostrap.svg",
         ],
@@ -61,11 +61,10 @@ export const STACK_GROUPS = {
       "Languages": {
         png: [
           "/assets/stack/python.svg",
-          "/assets/stack/csharp.svg",
           "/assets/stack/c.svg",
           "/assets/stack/cpp.svg",
         ],
-        labels: ["Python", "C#", "C", "C++"],
+        labels: ["Python", "C", "C++"],
       },
       "Frontend": {
         png: ["/assets/stack/react.svg", "/assets/stack/thymeleaf.svg"],
@@ -98,7 +97,7 @@ export const STACK_GROUPS = {
     subcategories: {
       "AI & Data Tools": {
         png: ["/assets/stack/vibecode.png"],
-        labels: ["Vibe Coding (AI-Assisted Development)"],
+        labels: ["Vibe Code"],
       },
     },
   },
